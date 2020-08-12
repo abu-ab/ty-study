@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/learning/learning",
+    "pages/index/statistical/statistical",
+    "pages/index/message/message"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/learning/learning",
+      "text": "学习"
+    },{
+      "pagePath": "pages/index/statistical/statistical",
+      "text": "统计"
+    },{
+      "pagePath": "pages/index/statistical/statistical",
+      "text": "留言板"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
