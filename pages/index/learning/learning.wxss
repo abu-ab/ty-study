@@ -1,1 +1,71 @@
-/* pages/index/learning/learning.wxss */
+
+
+/* .content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* 
+.start{
+  position: fixed;
+  bottom: 32rpx;
+  width:150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background: blue;
+  color: #fff;
+  line-height: 150rpx;
+  text-align: center;
+  font-size: 12px;
+} */
+
+.main,.wave{
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.main{
+
+  border: 3px solid darkturquoise;
+  padding: 10px;
+  overflow: hidden;
+}
+.wave{
+
+  background: darkturquoise;
+}
+.wave::before{
+  content: "开始学习";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  color: darkturquoise;
+  z-index: 99;
+  transform: translate(-50%,30rpx);
+  /* text-decoration: unset; */
+  font-weight: 500;
+}
+.wave::after{
+  content: '';
+  width: 600rpx;
+  height:600rpx;
+  background: rgba(255, 255, 255, .8);
+  position: absolute;
+  left: 50%;
+  top:0;
+  transform: translate(-50%,-40%);
+  border-radius: 40%;
+  animation: wave 5s linear infinite;
+}
+@keyframes wave{
+  100%{
+    transform:translate(-50%,-40%) rotate(360deg);
+  }
+}

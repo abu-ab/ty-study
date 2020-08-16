@@ -1,2 +1,8 @@
-<!--pages/index/learning/learning.wxml-->
-<text>pages/index/learning/learning.wxml</text>
+<view class="container">
+  <!-- <view class="content">
+    <text class="start">开始学习</text>
+  </view> -->
+  <view class="main">
+    <view class="wave"></view>
+  </view>
+</view>
